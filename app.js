@@ -1,12 +1,3 @@
-// API key a2ea048190f8464e762727a110f31730
-
-// https://api.openweathermap.org/data/2.5/weather?lat=44.34&lon=10.99&appid=a2ea048190f8464e762727a110f31730
-
-// https://api.openweathermap.org/data/2.5/weather?q=Budaun&appid=a2ea048190f8464e762727a110f31730
-
-// https://openweathermap.org/img/wn/10d.png for icon
-
-
 let closeWhetherContainer=document.querySelector('.closeWhetherContainer');
 let whetherMainContainer=document.querySelector(".whetherMainContainer");
 let HowSky=document.querySelector(".HowSky");
@@ -28,7 +19,7 @@ async function getResponse(){
         return;
     }
     else{ 
-    let response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=a2ea048190f8464e762727a110f31730`);
+    let response=await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${inputValue}&appid=Your_api_key`);
     let data=await response.json();
     let sunrise=data.sys.sunrise;
     let sunset=data.sys.sunset;
