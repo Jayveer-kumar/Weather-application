@@ -1,0 +1,181 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(220, 220, 217);
+    margin-bottom: 300px;
+    overflow-x: hidden;
+}
+.navbar {
+    padding: 0.3rem 1rem;
+    height: auto;
+}
+
+.navbar-brand {
+    font-size: 1rem;
+}
+.navbar-nav .nav-link {
+    font-size: 0.8rem;
+    margin-left: 80px;
+}
+.form-inline .form-control {
+    width: 200px;
+    font-size: 0.85rem;
+}
+.form-inline .btn {
+    font-size: 0.7rem;
+    padding:auto;
+}
+.whetherMainContainer{
+    position: absolute;
+    top:15%;
+    transition: right 1s ease-in-out;
+}
+.visiableWhetherContainer{ 
+    right: 30px;
+}
+.hideWhetherContainer{
+    right: -600px;
+}
+
+.whetherContainer{
+    height: 350px;
+    width: 500px;
+    border:2px solid black;
+    margin-left:30px;
+    position: relative;
+    overflow: hidden;
+    border-radius:10px;
+}
+.whetherContainer:hover{
+    .closeWhetherContainer{
+        opacity: 1;
+    }
+}
+.whetherImageContainer{
+    height: 200px;
+    width: 100%;
+    position: relative;
+}
+.whetherImageContainer img{
+    height: 100%;
+    width: 100%;
+    object-fit: fill;
+}
+.whetherImageContainer .location{
+    position: absolute;
+    top:10px;
+    left:10px;
+    color:black;
+    font-size: 15px;
+    font-weight: 600;
+}
+.whetherImageContainer .locationIcon{
+    color: black;
+    font-size:14px;
+}
+.whetherImageContainer .tempreture,.tempInfo{
+    position: absolute;
+    top:40%;
+    left:40%;
+    color:black;
+    font-size: 35px;
+    font-weight: 700;
+    z-index: 10;
+}
+.whetherImageContainer .minTempreture{
+    top:65%;
+    left:30%;
+    font-size: 15px;
+    font-weight: 500;
+}
+.whetherImageContainer .HowSky{
+    top: 10px;
+    font-size: 14px;
+}
+.whetherContainer .whetherInformation{
+    height: 150px;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.848);
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+}
+.whetherContainer .whetherInformation div{
+    height: 80px;
+    width: 60px;
+    margin-left:10px;    
+    border:1px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    padding:5px 0;
+    background-color: rgba(9, 18, 22, 0.953);
+    border:0.2px solid rgb(227, 178, 178);
+    border-radius: 10px;
+    transition:all 0.2s ease;
+    cursor: pointer;
+}
+
+.whetherContainer .whetherInformation div p ,i{
+    font-size: 10px;
+    padding:2px 2px;
+    font-weight: 500;
+    color:white;
+}
+.whetherContainer .whetherInformation div .commonClassforData{
+    margin-top:-5px;
+    font-size: 12px;
+}
+#sunset_sunrise{
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    padding:0 6px;
+    width:40%;
+}
+#sunset_sunrise p{
+    font-size: 14px;
+}
+
+/* Close whetherContainer */
+.closeWhetherContainer{
+    position: absolute;
+    top:5px;
+    height: 35px;
+    width: 35px;
+    border-radius: 50%;
+    background-color: rgba(233, 233, 233, 0.873);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    right: 5px;
+    z-index: 200;
+    cursor: pointer;
+    transition: right 1s ease-in-out;
+    opacity: 0;
+}
+.closeWhetherContainer i{
+    font-size: 20px;
+    color:rgb(32, 7, 7);
+    cursor: pointer;
+}
+
+.delete{
+    margin:10px;
+    display: inline-block;
+    border:2px solid black;
+    padding:10px;
+    cursor: pointer;
+    border-radius: 10px;
+}
+.clear-sky{    
+    border:2px solid black;
+    background-image: url("https://i.makeagif.com/media/9-14-2015/_XJYRL.gif");    
+}
+.rain{
+    background-image: url("https://cdn.pixabay.com/animation/2023/03/26/01/15/01-15-42-612_512.gif");
+}

@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whether Web application</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css" integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+ 
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Weather App</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse ml-auto" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-item nav-link active" href="#">Home <span class="sr-only">(current)</span></a>
+            <a class="nav-item nav-link" href="#">Features</a>
+            <a class="nav-item nav-link" href="#">Blog</a>
+        </div>
+        <form class="form-inline ml-auto">
+            <input class="form-control mr-sm-2 inputData" type="search" placeholder="Search" aria-label="Search">
+            <button class="btn btn-outline-success my-2 my-sm-0 SearchBtn" type="submit">Search</button>
+        </form>
+    </div>
+</nav>
+
+<div class="jumbotron">
+  <h1 class="display-4">Welcome to cloud!</h1>
+  <p class="lead">Get Whether information in just one  click</p>
+  <hr class="my-4">
+  <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
+  <p class="lead">
+    <a class="btn btn-success btn-lg" href="#" role="button">Get Start</a>
+  </p>
+</div>
+   <div class="whetherMainContainer hideWhetherContainer visiableWhetherContainer">   
+   <div class="whetherContainer">
+    <div class="whetherImageContainer">
+       <div class="location"> <i class="fa-solid fa-location-dot locationIcon"></i> <span class="locationName"></span> </div>
+       <img src="https://i.makeagif.com/media/9-14-2015/_XJYRL.gif">
+       <p class="tempreture tempInfo">17 &deg; </p>
+       <p class="minTempreture feelsLikeinKelvin tempInfo">  </p>
+       <p class="HowSky tempInfo">Clear Sky 🌤️</p>
+    </div>
+    <div class="whetherInformation">
+      <div class="feelsLike">
+      <i class="fa-solid fa-temperature-three-quarters"></i>
+      <p class="feelsLikeParagraphbox">Feels like </p>
+      <p class="feelslikedata commonClassforData">11&deg;</p>
+     </div>
+      <div class="humidity">
+        <i class="fa-solid fa-leaf"></i>
+        <p class="humidityParagraphBox">Humidity</p>
+        <p class="humiditydata commonClassforData">95%</p>
+      </div>
+      <div class="airPressure">
+        <i class="fa-solid fa-arrow-down-short-wide"></i>
+        <p class="airPressureBox">Air pressure</p>
+        <p class="airPressureData commonClassforData">1020hpa</p>
+      </div>
+      <div class="visibility">
+        <i class="fa-regular fa-eye"></i>
+        <p class="visibilityBox">Visibility</p>
+        <p class="visibilityData commonClassforData">10km</p>
+      </div>
+      <div id="sunset_sunrise">
+        <p class="sunrise">Sunrise  🌄<span class="sunriseSpan">7:07 am</span></p>
+        <p class="sunset"> Sunset 🌇 <span class="sunsetSpan">5:39 pm</span> </p>
+      </div>
+
+    </div>
+    <div class="closeWhetherContainer"><i class="fa-solid fa-xmark"></i></div>
+   </div>
+  </div>
+
+
+<script src="app.js"></script>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
